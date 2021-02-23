@@ -4,13 +4,16 @@ import '../styles/App.css';
 import Data from "./data";
 
 const App = () => {
+  var i=0;
   return (
     <div id="main">
       <ol>
         {Data.map((value,index)=>{
           if(value.country=="India")
           {
-            return <li key={"location"+(index+1)}>{value.name}</li>
+            i++;
+            
+            return <li key={"location"+(i)}>{value.name}</li>
           }
         })}
       </ol>
@@ -21,4 +24,3 @@ const App = () => {
 
 
 export default App;
-
