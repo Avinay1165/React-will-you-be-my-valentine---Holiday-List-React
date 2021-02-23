@@ -7,7 +7,7 @@ const App = () => {
   var i=0;
   return (
     <div id="main">
-      <ol>
+      <ol type="1">
         {Data.map((value,index)=>{
           if(value.country=="India")
           {
