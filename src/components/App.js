@@ -40,7 +40,7 @@ class App extends Component {
   render() {
     return (
       <div id="main">
-         <ol type="a">
+         <ol type="i">
           {this.cityList.map((value,index)=>{
             if(value.country=="India")
             {
